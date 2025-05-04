@@ -1,0 +1,25 @@
+button {
+    background: darkblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #bebebe, -2px -2px 8px #fff;
+    
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 4px 4px 8px yellow, -4px -4px 8px yellow;
+}
+
+button:active {
+    box-shadow: inset 4px 4px 8px yellow, inset -4px -4px 8px yellow;
+}
+
+button:focus {
+    outline: none;
+}
