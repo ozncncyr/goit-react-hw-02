@@ -1,12 +1,69 @@
-# React + Vite
+# Sip Happens Café Feedback App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application built with Vite for collecting and displaying
+user feedback for a fictional café, "Sip Happens Café". Users can rate the
+service as Good, Neutral, or Bad, and view statistics about the feedback.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive feedback buttons: Good, Neutral, Bad
+- Real-time statistics: total feedback count and percentage of positive feedback
+- Local storage persistence: feedback data is saved between sessions
+- Option to reset feedback statistics
+- Responsive and minimal UI
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- CSS Modules
+- Local Storage API
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/ozncncyr/goit-react-hw-02.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd goit-react-hw-02
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+### Running the App
+
+Start the development server:
+
+```
+npm run dev
+```
+
+Open your browser and go to `http://localhost:5173` (or the port shown in your
+terminal).
+
+### Building for Production
+
+To build the app for production:
+
+```
+npm run build
+```
+
+## Project Structure
+
+- `src/App.jsx`: Main application logic and state management
+- `src/components/Description/Description.jsx`: App description and instructions
+- `src/components/Feedback/Feedback.jsx`: Displays feedback statistics
+- `src/components/Notification/Notification.jsx`: Shown when no feedback is
+  present
+- `src/components/Options/Options.jsx`: Feedback and reset buttons
+
+## License
+
+This project is for educational purposes.
